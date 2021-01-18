@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html  lang = "en">
+    <head>
+	    <meta  charset = "UTF-8">
+	    <title>  swapi_test  </title>
+        <link  rel = "stylesheet"  href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link  rel = "stylesheet"  href = "css/modal.css">
+		<link  rel = "stylesheet"  href = "css/index.css">
+        <script src="https://unpkg.com/vue"></script>
+        <script  src = "script/swapi_test.js"></script>
+	</head>	
+	<body>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="plName">Planet Name</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p id="plClimate">Climate:           </p>
+                <p id="plSurfaceWater">Surface water:     </p>
+                <p id="plTerrain">Terrain:           </p>
+                <p id="plPopulation">Population:        </p>
+                <p id="plDiameter">Diameter:         </p>
+                <p id="plGravity">Gravity:           </p>
+                <p id="plRotationPeriod">Rotation period:   </p>
+                <p id="plOrbitalPeriod">Orbital period:    </p>
+            </div>
+            </div>
+        </div>
+        
+        <div id = "app">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type = "button" class = "btn btn-info" v-on:click="showPlanetList">
+                    Show Planet
+                </button>
+                <button type = "button" class = "btn btn-info" v-on:click="showStatf">
+                    Show Statistics
+                </button>
+            </div>
+            
+            <div class="list-group" id = "planet" v-show="showPlanetl">
+            </div>
+            
+            <div id = "stat" v-show="showStat">
+                <iframe src="html/chart.html" width="700px" height="700px">
+                </iframe>
+            </div>
+        </div>
+        
+        <script  src = "script/vue.js"></script>
+        <script  src = "script/modal.js"></script>
+	</body>
+</html>

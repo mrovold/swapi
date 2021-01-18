@@ -1,0 +1,33 @@
+.btn-info {
+    background-color: #000;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.btn-info:hover {
+    background-color: #3d3d3d;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.btn-info:active, .btn-info:focus {
+    background: #3d3d3d;
+    background-color: #3d3d3d;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    box-shadow: 2px 1px 1px #feda4a;
+}
+
+.list-group-item-action:hover {
+    background-color: #3d3d3d;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.list-group-item-action:active, .list-group-item-action:focus {
+    background: #3d3d3d;
+    background-color: #3d3d3d;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    box-shadow: 2px 1px 1px #feda4a;
+}
